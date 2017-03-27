@@ -1,75 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Belajar HTML 5</title>
     <style>
-      body{
-        font-family: Verdana, sans-serif;
-        font-size: 12px;
-      }
-      #header, #nav, #main-content, #sidebar-content, #footer{
-        border: 1px solid grey; margin: 5px; padding: 5px;
-      }
-      #main-content{
-        float: left;
-        width: 60%;
-      }
-      #sidebar-content{
-        float: left;
-        width: 30%;
-      }
-      #footer{
-        clear: both;
-      }
+        body {
+            font-family: Verdana, sans-serif;
+            font-size: 12px;
+        }
+
+        header,
+        nav,
+        main,
+        aside,
+        footer {
+            border: 1px solid grey;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        main {
+            float: left;
+            width: 60%;
+        }
+
+        aside {
+            float: left;
+            width: 30%;
+        }
+
+        footer {
+            clear: both;
+        }
     </style>
-  </head>
-  <body>
+</head>
 
-    <div id="header">
-      <h1>One Piece</h1>
-      <h2>The Best Anime</h2>
-    </div>
+<body>
 
-    <div id="nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Profil</a></li>
-        <li><a href="#">Kontak</a></li>
-      </ul>
-    </div>
+    <header>
+        <h1>One Piece</h1>
+        <h2>The Best Anime</h2>
+    </header>
 
-    <div id="main-content">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profil</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
 
-      <h1>Daftar Peran</h1>
+    <main>
 
-      <div>
-        <h2>Bajak Laut</h2>
-        <p>Kelompok yang berpetualang di lautan dengan tujuan mendapatkan One Piece</p>
-      </div>
+      <article>
 
-      <div>
-        <h2>Angkatan Laut</h2>
-        <p>Polisi laut yang bertugas menjaga kedamaian dunia dengan memberantas Bajak Laut</p>
-      </div>
+        <form>
+          <input type="search" name="search" placeholder="cari...">
+          <input type="email" name="email" placeholder="email">
+          <input name="startdate" min="2012-01-01" max="2013-01-01" type="date">
+          <input type="color" name="color">
+          <input type="submit">
+        </form>
 
-      <div>
-        <h2>Warga Biasa</h2>
-        <p>Para warga biasa yang menghiasi dunia One Piece</p>
-      </div>
+        <figure>
+          <img src="http://vignette1.wikia.nocookie.net/onepiece/images/8/87/One_Piece_Anime_Logo.png/revision/20140921210846" alt="One pIece" width="600" height="200">
+          <figcaption>One Piece</figcaption>
+        </figure>
 
-    </div>
+        <dialog open>
+          Ini contoh dialog open
+        </dialog>
 
-    <div id="sidebar-content">
-      <h2>Daftar Artikel</h2>
-      <a href="#">Karakter One Piece</a> <br>
-      <a href="#">Buah Setan</a> <br>
-      <a href="#">New World</a>
-    </div>
+        <details>
+          <summary>Info lebih lanjut</summary>
+          <p>Cuma coba coba "details" + "summary"</p>
+        </details>
 
-    <div id="footer">
-      <p>&copy; 2017 MIK</p>
-    </div>
+        <h1>Daftar Peran</h1>
 
-  </body>
+        <section>
+            <h2>Bajak Laut</h2>
+            <p>Kelompok yang berpetualang di lautan dengan tujuan mendapatkan One Piece</p>
+        </section>
+
+        <section>
+            <h2>Angkatan Laut</h2>
+            <p>Polisi laut yang bertugas menjaga kedamaian dunia dengan memberantas Bajak Laut</p>
+        </section>
+
+        <section>
+            <h2>Warga Biasa</h2>
+            <p>Para warga biasa yang menghiasi dunia One Piece</p>
+        </section>
+
+      </article>
+
+    </main>
+
+    <aside>
+        <h2>Daftar Artikel</h2>
+        <a href="#">Karakter One Piece</a> <br>
+        <a href="#">Buah Setan</a> <br>
+        <a href="#">New World</a>
+    </aside>
+
+    <footer>
+        <p>&copy; 2017 MIK</p>
+    </footer>
+
+</body>
+
 </html>
